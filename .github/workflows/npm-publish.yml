@@ -133,6 +133,13 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    env:
+      # Optional token fallback for manual `workflow_dispatch` releases. When the
+      # NPM_TOKEN repository secret is set, setup-node writes it as the registry
+      # _authToken so `npm publish` authenticates even before npm trusted
+      # publishing is configured for this package. If trusted publishing IS
+      # configured, npm prefers the OIDC identity and this value is ignored.
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     steps:
       - name: Check out npm wrapper
