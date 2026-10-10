@@ -1,7 +1,7 @@
 {
   "name": "nastech-agent",
-  "version": "0.20.0",
-  "description": "Unofficial npm bridge for Nastech Agent 0.20.0: The self-improving AI agent \u2014 creates skills from experience, improves them during use, and runs anywhere",
+  "version": "0.21.4",
+  "description": "Unofficial npm bridge for Nastech Agent 0.21.4: The self-improving AI agent \u2014 creates skills from experience, improves them during use, and runs anywhere",
   "license": "MIT",
   "keywords": [
     "nastech-agent",
@@ -46,10 +46,10 @@
     "SECURITY.md"
   ],
   "nastechAgent": {
-    "upstreamVersion": "0.20.0",
+    "upstreamVersion": "0.21.4",
     "upstreamRepository": "NastechResearch/nastech-agent",
-    "upstreamGitTag": "v2026.8.3",
-    "upstreamCommit": "3c27eb6234bf91b8ceee9e9071591b31e9b148cb",
+    "upstreamGitTag": "v2026.9.18",
+    "upstreamCommit": "3fc7a9f54f25aad154c70cb810f4da74d3f2175d",
     "pythonVersion": "3.11",
     "runtimeDirectory": "runtime/nastech-agent"
   }

@@ -21,8 +21,8 @@ Git base: `c020305cd3ff4c47c2b1fa1e44a2ea4d5695ccf0`.
   user-scoped upstream checkout; `--yes` executes the pinned installer,
   verifies it, then removes the npm package.
 - Installation uses a shallow Git checkout pinned to upstream tag
-  `v2026.8.3` and peeled commit
-  `3c27eb6234bf91b8ceee9e9071591b31e9b148cb`.
+  `v2026.9.18` and peeled commit
+  `3fc7a9f54f25aad154c70cb810f4da74d3f2175d`.
 - Checksum-pinned `uv` 0.12.13 provisions package-local Python 3.11 and runs
   upstream `uv sync --frozen --extra all --no-dev`.
 - No upstream installer script, PyPI Nastech package, system-Python fallback,
@@ -87,9 +87,9 @@ using `--ignore-scripts`.
 
 ## Completed verification
 
-- `npm test`: 44 passed and three POSIX-only tests skipped on Windows,
-  including handoff path/argument/order/finalization guards.
-- `npm run smoke`: passed for `v2026.8.3` at `3c27eb6234bf`.
+- `npm test`: 60 tests, 59 passed and one PowerShell-only test skipped on
+  Linux, including handoff path/argument/order/finalization guards.
+- `npm run smoke`: passed for `v2026.9.18` at `3fc7a9f54f25`.
 - Root `npm pack --dry-run`: passed; 16 intended files.
 - Alias build and `npm pack --dry-run`: passed; 16 intended files.
 - Live `nastech-npm check --json`: passed and reported local `0.20.0` ahead
